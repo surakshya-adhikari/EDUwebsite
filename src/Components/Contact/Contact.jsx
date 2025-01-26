@@ -21,10 +21,6 @@ const Contact = () => {
       method: "POST",
       body: formData
     });
-   
-    const apple = "my name is apple"
-
-
     const data = await response.json();
 
     if (data.success) {
@@ -55,7 +51,7 @@ const Contact = () => {
                 <input type="tel" name='phone' placeholder='Enter your Phone Number' required/>
                 <label> Write your message here</label>
                 <textarea name="message" rows="6" placeholder='Text here' required></textarea>
-               <button type='submit' className='btn dark-btn' > <img src={white_arrow} alt="" />Submit</button>
+               <button type='submit' className='btn dark-btn' >Submit <img src={white_arrow} alt="" /></button>
             </form>
             <span>{result}</span>
         </div>
