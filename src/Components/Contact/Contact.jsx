@@ -21,6 +21,9 @@ const Contact = () => {
       method: "POST",
       body: formData
     });
+   
+    const apple = "my name is apple"
+
 
     const data = await response.json();
 
